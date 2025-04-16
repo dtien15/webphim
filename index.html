@@ -1,0 +1,33 @@
+<!-- File: index.html -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xem Phim Miễn Phí</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>Xem Phim Miễn Phí</h1>
+    <input type="text" id="searchInput" placeholder="Tìm kiếm phim...">
+  </header>
+
+  <main>
+    <div id="movie-list" class="movie-list"></div>
+    <div class="pagination">
+      <button id="prevPage">Trang trước</button>
+      <span id="pageNumber">1</span>
+      <button id="nextPage">Trang sau</button>
+    </div>
+
+    <div id="player-section" class="hidden">
+      <h2 id="movie-title"></h2>
+      <iframe id="movie-player" width="100%" height="450" frameborder="0" allowfullscreen></iframe>
+      <button id="backBtn">Quay lại danh sách</button>
+    </div>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+</html>
